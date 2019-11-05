@@ -6,7 +6,8 @@ class Show < ActiveRecord::Base
   def actors_list
     list = []
     self.actors.map do |a|
-      list << a.to_s
+      a.to_s
+      list << a
     end
     list
   end
