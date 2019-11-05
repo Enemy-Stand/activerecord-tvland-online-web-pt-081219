@@ -4,7 +4,6 @@ class Show < ActiveRecord::Base
   belongs_to :network
   
   def actors_list
-    length = 
-    Character.length
+    puts hello
   end
 end
