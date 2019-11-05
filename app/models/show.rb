@@ -4,7 +4,10 @@ class Show < ActiveRecord::Base
   belongs_to :network
   
   def actors_list
+    list = []
     self.actors.map do |a|
-      
+      list << a
+    end
+    list
   end
 end
